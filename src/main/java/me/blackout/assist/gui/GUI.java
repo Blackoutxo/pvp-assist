@@ -15,6 +15,6 @@ public class GUI extends Screen {
 
     @Override
     public void extractRenderState(@NotNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta) {
-        Renderer2D.drawVerticalLine(graphics, 100, 100, Color.CYAN);
+        Renderer2D.quad(graphics, 100, 100, 100, 100, Color.DARK_GRAY);
     }
 }
