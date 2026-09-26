@@ -1,5 +1,6 @@
 package me.blackout.assist;
 
+import me.blackout.assist.utils.Utils;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.client.Minecraft;
@@ -19,6 +20,9 @@ public class PvPAssist implements ModInitializer {
 		LOG.info("Initializing PvP Assist");
 
 		mc = Minecraft.getInstance();
+
+		// Register necessity
+		new Utils().register();
 	}
 
 	public static Identifier id(String path) {
