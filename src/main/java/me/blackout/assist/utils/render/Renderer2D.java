@@ -7,12 +7,12 @@ import java.awt.*;
 public class Renderer2D {
 
     // Lines
-    public static void drawHorizontalLine(GuiGraphicsExtractor graphics, int from, int to, Color color) {
-        graphics.horizontalLine(from, from, to, color.getRGB());
+    public static void drawHorizontalLine(GuiGraphicsExtractor graphics, int x, int fromY, int toY, Color color) {
+        graphics.horizontalLine(x, fromY, toY, color.getRGB());
     }
 
-    public static void drawVerticalLine(GuiGraphicsExtractor graphics, int from, int to, Color color) {
-        graphics.verticalLine(from, from, to, color.getRGB());
+    public static void drawVerticalLine(GuiGraphicsExtractor graphics, int x, int fromY, int toY, Color color) {
+        graphics.verticalLine(x, fromY, toY, color.getRGB());
     }
 
     // Quads
