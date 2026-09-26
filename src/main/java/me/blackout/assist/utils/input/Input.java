@@ -26,8 +26,6 @@ public class Input {
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (openGUIKey.consumeClick()) {
-                if (client.player == null) return;
-
                 mc.gui.setScreen(new GUI());
             }
         });
